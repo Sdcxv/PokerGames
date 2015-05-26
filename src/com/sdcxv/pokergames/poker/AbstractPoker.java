@@ -2,12 +2,13 @@ package com.sdcxv.pokergames.poker;
 
 /**
  * Created by Sdcxv on 2015/5/25.
+ * ç‰Œç»„æŠ½è±¡ç±»ï¼Œå­˜æ”¾æ‰‹ç‰Œä¸ç‰Œç»„å…±æœ‰çš„æˆå‘˜å˜é‡ä¸æˆå‘˜æ–¹æ³•
  */
 public abstract class AbstractPoker implements IPokerable {
     /**
-     * ÓÃÓÚ´æ·ÅÅÆ×éµÄ¶şÎ¬²¼¶ûÀàĞÍÊı×é£¬4ÖÖ»¨É«£¨ÁĞ£¬suit£©£¬13ÖÖÊı×Ö£¨ĞĞ£¬num£©¹²52ÕÅ
-     * true±íÊ¾¸ÃÎ»ÖÃÓĞÕâÕÅÅÆ
-     * false±íÊ¾¸ÃÎ»ÖÃÎŞÕâÕÅÅÆ
+     * ç”¨äºå­˜æ”¾ç‰Œç»„çš„äºŒç»´å¸ƒå°”ç±»å‹æ•°ç»„ï¼Œ4ç§èŠ±è‰²ï¼ˆåˆ—ï¼Œsuitï¼‰ï¼Œ13ç§æ•°å­—ï¼ˆè¡Œï¼Œnumï¼‰å…±52å¼ 
+     * trueè¡¨ç¤ºè¯¥ä½ç½®æœ‰è¿™å¼ ç‰Œ
+     * falseè¡¨ç¤ºè¯¥ä½ç½®æ— è¿™å¼ ç‰Œ
      */
     protected boolean[][] poker = new boolean[13][4];
 
@@ -15,7 +16,7 @@ public abstract class AbstractPoker implements IPokerable {
         return poker;
     }
 
-    //ÏÔÊ¾ÅÆ×éÖĞµÄËùÓĞÅÆµÄÇé¿ö
+    //æ˜¾ç¤ºç‰Œç»„ä¸­çš„æ‰€æœ‰ç‰Œçš„æƒ…å†µ
     @Override
     public void checkPoker() {
         for (boolean[] point : poker) {
