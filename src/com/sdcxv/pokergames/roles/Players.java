@@ -7,7 +7,7 @@ import java.util.Queue;
 
 /**
  * Created by Sdcxv on 2015/5/25.
- * Íæ¼Ò¶ÓÁĞÖ»ÓĞÒ»¸ö£¬¹Ê²ÉÓÃµ¥ÀıÄ£Ê½
+ * ç©å®¶é˜Ÿåˆ—åªæœ‰ä¸€ä¸ªï¼Œæ•…é‡‡ç”¨å•ä¾‹æ¨¡å¼
  */
 public class Players {
     private static Players ourInstance = new Players();
@@ -19,38 +19,34 @@ public class Players {
     private Players() {
     }
 
-    //Íæ¼Ò¶ÓÁĞ
+    //ç©å®¶é˜Ÿåˆ—
     private Queue<Player> players = new LinkedList<Player>();
-    //³õÊ¼»¯ËÄ¸öÍæ¼Ò£¬ÅÆ¾ÖÍæ¼ÒID·Ö±ğÎªA£¬D£¬B£¬C
-    //Íæ¼ÒEÓÃÓÚ·ÀÖ¹¶ÓÁĞ·Ç¿Õ
+    //åˆå§‹åŒ–å››ä¸ªç©å®¶ï¼Œç‰Œå±€ç©å®¶IDåˆ†åˆ«ä¸ºAï¼ŒDï¼ŒBï¼ŒC
     private Player playerA = new Player();
     private Player playerB = new Player();
     private Player playerC = new Player();
     private Player playerD = new Player();
-    private Player playerE = new Player();
 
-    //Íæ¼Ò³ö¶Ó
+    //ç©å®¶å‡ºé˜Ÿ
     public Player getPlayer() {
         return players.poll();
     }
 
-    //Íæ¼ÒÈë¶Ó
+    //ç©å®¶å…¥é˜Ÿ
     public void setPlayer(Player p) {
         players.offer(p);
     }
 
-    //Íæ¼ÒÓëÍæ¼Ò¶ÓÁĞ³õÊ¼»¯
+    //ç©å®¶ä¸ç©å®¶é˜Ÿåˆ—åˆå§‹åŒ–
     public void initPlayers() {
         playerA.initPlayer(PID.A);
         playerB.initPlayer(PID.B);
         playerC.initPlayer(PID.C);
         playerD.initPlayer(PID.D);
-        playerE.initPlayer(PID.E);
         players.offer(playerA);
         players.offer(playerB);
         players.offer(playerC);
         players.offer(playerD);
-        players.offer(playerE);
     }
 
     public void showDown(){
