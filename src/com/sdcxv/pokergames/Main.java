@@ -4,20 +4,20 @@ import com.sdcxv.pokergames.roles.Banker;
 import com.sdcxv.pokergames.roles.Players;
 
 public class Main {
-
     public static void main(String[] args) {
-        //»ñÈ¡×¯¼ÒÊµÀı
+        //è·å–åº„å®¶å®ä¾‹
         Banker banker = Banker.getInstance();
-        //×¯¼Ò³õÊ¼»¯
+        //åº„å®¶åˆå§‹åŒ–
         banker.initBanker();
-        //»ñÈ¡Íæ¼Ò¶ÓÁĞÊµÀı
+        //è·å–ç©å®¶é˜Ÿåˆ—å®ä¾‹
         Players players = Players.getInstance();
-        //Íæ¼Ò³õÊ¼»¯
+        //ç©å®¶åˆå§‹åŒ–
         players.initPlayers();
-        //×¯¼Ò·¢ÅÆ£¬¹²52´Î
+        //åº„å®¶å‘ç‰Œï¼Œå…±52æ¬¡
         for (int i = 0; i < 52; i++) {
             banker.deal(players);
         }
+        //ç©å®¶ä»¬è½®æµæ‘Šç‰Œ
         players.showDown();
     }
 }
