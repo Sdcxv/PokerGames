@@ -2,7 +2,7 @@ package com.sdcxv.pokergames.enums;
 
 /**
  * Created by Sdcxv on 2015/5/25.
- * µãÊıÃ¶¾ÙÀà
+ * ç‚¹æ•°æšä¸¾ç±»
  */
 public enum Points {
     ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, error
