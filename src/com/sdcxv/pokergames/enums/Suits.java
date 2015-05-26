@@ -2,7 +2,7 @@ package com.sdcxv.pokergames.enums;
 
 /**
  * Created by Sdcxv on 2015/5/25.
- * »¨É«Ã¶¾ÙÀà
+ * èŠ±è‰²æšä¸¾ç±»
  */
 public enum Suits {
     spade, hearts, diamond, club, error
